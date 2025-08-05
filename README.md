@@ -1,4 +1,4 @@
-# ADmyBRAND Insights - Analytics Dashboard
+# TaskMaster - Analytics Dashboard
 
 This project is a complete, full-stack analytics dashboard built to look great and work smoothly. It's like a control panel for a digital marketing agency, showing all the important numbers like revenue, user growth, and campaign performance in one clean interface.
 
