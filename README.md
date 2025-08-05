@@ -68,26 +68,23 @@ This report details how AI was used as a pair-programmer and debugging partner t
 
 ### AI Tools Used
 
-* **Primary tool:** Google's Gemini
+* **Primary Coding & Deployment Assistant:** Replit AI
+* **Conversational & Debugging Assistant:** Google's Gemini
+* **UI/UX Design Ideas:** Galileo AI
 * **Key use cases:**
-    * Initial project planning and scaffolding of the full-stack architecture.
-    * Generating boilerplate code for React components and server-side routes.
-    * Explaining complex concepts like Node.js versions, environment variables, and full-stack deployment.
-    * **Intensive Debugging:** This was the most critical use case. The AI helped diagnose and fix a series of difficult issues, including:
-        * Incorrect Node.js versions causing syntax errors.
-        * Flawed Vercel deployment configurations.
-        * Identifying and fixing a corrupted `package-lock.json` file that was causing build failures.
+    * **Replit AI:** Used for the initial project build-out, code generation, and handling the entire deployment process within its integrated environment.
+    * **Gemini:** Used as a conversational partner to debug complex deployment issues on Vercel, explain errors, and generate configuration files like `vercel.json`.
+    * **Galileo AI:** Used for inspiration on UI layout and modern component styling.
 
 ### Sample Prompts (2-3 examples)
 
 Here are a few examples of the kinds of prompts used during our development and debugging process:
 
-1.  "I'm getting a `SyntaxError: Unexpected token '||='` when I run `npm run db:push`. My Node.js version is v14. What does this mean and how do I fix it on Linux?"
-2.  "Create a `vercel.json` file for a full-stack project. The backend is in a `/server` folder and the frontend is a Vite app in a `/client` folder. It needs to handle API routes and serve the React app correctly."
-3.  "My Vercel deployment failed. The log says `sh: line 1: vite: command not found`. I moved `vite` to dependencies but it still fails. What's wrong?"
+1.  "I want to make this dashboard. Give me an overview of how to do it and generate the initial application."
+2.  "Now make the UI perfect so it looks modern. You can use glassy touches and other modern looks."
 
 ### AI vs Manual Work Split
 
-* **AI-generated (65%):** The AI provided the initial project structure, all configuration files (`vercel.json`, `package.json` scripts), boilerplate for components, and the step-by-step logic for debugging all the deployment errors. The entire troubleshooting process was guided by the AI.
-* **Manual coding (35%):** My role was to be the hands-on developer. I set up all the external accounts (GitHub, Neon, Vercel), ran the commands provided by the AI, implemented the code suggestions, and most importantly, provided the error logs and screenshots back to the AI. This feedback loop was essential for the AI to understand the problem and provide the correct solution.
-* **Customization:** The entire project is a result of customizing the AI's suggestions. While the AI provided the "how-to," I performed the actual implementation, connected my personal accounts, and adapted the code to fit the project's specific needs.
+* **AI-generated (70%):** AI tools handled the heavy lifting. Replit AI generated the initial full-stack application and managed deployment. Gemini provided the logic and code for debugging critical errors. Galileo AI offered visual templates for the UI.
+* **Manual coding (30%):** My role was to direct the AI, integrate the different parts, and perform the hands-on tasks. This included setting up external services (GitHub, Neon, Vercel), running terminal commands, and providing the error logs and screenshots that were essential for the debugging process.
+* **Customization:** The final project is a blend of AI-generated code and manual integration. I adapted the AI's suggestions, connected my personal accounts, and steered the project to its final, working state.
